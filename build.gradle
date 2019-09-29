@@ -37,8 +37,8 @@ allprojects { project ->
     apply plugin: "io.spring.dependency-management"
     dependencyManagement {
         imports {
-            mavenBom "com.github.peacetrue:peacetrue-dependencies:2.0.0-SNAPSHOT"
             mavenBom "org.springframework.boot:spring-boot-dependencies:2.0.0.RELEASE"
+            mavenBom "com.github.peacetrue:peacetrue-dependencies:2.0.0-SNAPSHOT"
         }
     }
 
