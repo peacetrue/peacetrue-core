@@ -1,7 +1,6 @@
 plugins {
     id("java-library")
     id "io.spring.dependency-management" version "1.0.8.RELEASE"
-//    id("org.springframework.boot") version "1.5.20.RELEASE" apply(false)
     id("maven-publish")
     id("signing")
     id("idea")
@@ -9,9 +8,9 @@ plugins {
 
 allprojects { project ->
 
-    group "com.github.peacetrue.template"
-    version "1.0-SNAPSHOT"
-    description "gradle模板"
+    group "com.github.peacetrue"
+    version "2.0.0-SNAPSHOT"
+    description "提供基础数据结构和工具类"
 
     apply plugin: "java"
     apply plugin: "java-library"
@@ -38,10 +37,7 @@ allprojects { project ->
     apply plugin: "io.spring.dependency-management"
     dependencyManagement {
         imports {
-            mavenBom "org.springframework.boot:spring-boot-dependencies:1.5.20.RELEASE"
-//            mavenBom "org.springframework.boot:spring-boot-dependencies:2.1.8.RELEASE"
-            mavenBom "com.github.peacetrue:peacetrue-dependencies:1.0.4-SNAPSHOT"
-//            mavenBom "com.github.peacetrue:peacetrue-dependencies:2.0.0-SNAPSHOT"
+            mavenBom "com.github.peacetrue:peacetrue-dependencies:2.0.0-SNAPSHOT"
         }
     }
 

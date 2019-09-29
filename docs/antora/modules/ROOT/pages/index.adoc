@@ -1,1 +1,51 @@
 = 简介
+
+* 名称：**peacetrue-core**
+* 用途：提供**peacetrue**系列组件的公用信息
+* 地址： https://github.com/peacetrue/peacetrue-core[github^]
+
+== 具体内容
+=== 常用 bean 属性 Setter/Getter 接口
+
+基于接口实现可扩展的通用操作。
+包括以下属性：
+
+* Id：主键，记录的唯一标识，计算机可读
+* Code：编码，记录的唯一标识，人类可读
+* Name：名称
+* Data：负载数据
+* Message：消息
+
+=== 操作者
+操作者用于表示当前操作用户，扩展支持基于spring实现自动注入
+
+* Operator：操作者
+* OperatorBean：可设置和读取操作者
+
+=== 记录信息
+记录信息用于表示实体信息。
+
+* Record：记录信息
+* RecordAbsentException：记录不存在异常
+* RecordExistException：记录已存在异常
+* RecordUnownedException：记录不被拥有
+
+=== 常用工具类
+* 类加载器
+* 集合
+* 收集器
+* 流
+* 日期
+* 消息摘要
+* 正则表达式
+* URL编码/解码
+* UUID
+* 断言
+
+=== 常用数据结构
+* Range：范围，用于起止时间筛选
+
+== 相关约定
+* ``\{属性名}Aware``可设置属性
+* ``\{属性名}Capable``可获取属性
+* ``\{属性名}Bean`` 可设置和获取属性
