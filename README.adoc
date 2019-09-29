@@ -1,6 +1,6 @@
-= peacetrue core
+= peacetrue-core
 xiayx <xiayouxue@hotmail.com>
-v1.0, 2019-09-29: SNAPSHOT
+V2.0.0-SNAPSHOT, 2019-09-29: SNAPSHOT
 :doctype: docbook
 :toc: left
 :numbered:
@@ -10,4 +10,4 @@ v1.0, 2019-09-29: SNAPSHOT
 :testsourcedir: src/test/java
 :source-highlighter: highlightjs
 
-详情参考 
+查看 https://peacetrue.github.io/public/peacetrue-core/index.html[详情^]
